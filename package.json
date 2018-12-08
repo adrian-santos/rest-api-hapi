@@ -1,0 +1,34 @@
+{
+  "name": "rest-api-hapi",
+  "version": "1.0.0",
+  "description": "REST API Using Hapi and Knex",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bootstrap.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrian-santos/rest-api-hapi.git"
+  },
+  "keywords": [
+    "knex",
+    "hapi",
+    "rest-api"
+  ],
+  "author": "adrian-santos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adrian-santos/rest-api-hapi/issues"
+  },
+  "homepage": "https://github.com/adrian-santos/rest-api-hapi#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "hapi": "^17.8.1",
+    "hapi-auth-jwt": "^4.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "knex": "^0.15.2",
+    "mysql": "^2.16.0"
+  }
+}
