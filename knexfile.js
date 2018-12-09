@@ -7,7 +7,7 @@ module.exports = {
     connection: {
       host: 'localhost',
       user: 'root',
-      password: '---------',
+      password: 'password',
       database: 'birdbase',
       charset: 'utf8'
     }

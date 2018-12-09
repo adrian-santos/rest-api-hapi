@@ -1,13 +1,22 @@
-
 exports.seed = function(knex, Promise) {
-  // Deletes ALL existing entries
-  return knex('table_name').del()
-    .then(function () {
-      // Inserts seed entries
-      return knex('table_name').insert([
-        {id: 1, colName: 'rowValue1'},
-        {id: 2, colName: 'rowValue2'},
-        {id: 3, colName: 'rowValue3'}
-      ]);
-    });
+  var tableName = 'users';
+
+  var rows = [
+    {
+      name: 'Adrian Santos',
+      username: 'adrian-santos',
+      password: 'password',
+      email: 'adrian@proconoptions.com',
+      guid: 'f03ede7c-b121-4112-bcc7-130a3e87988c'
+    }
+  ];
+
+  return (
+    knex(tableName)
+      //Empty table
+      .del()
+      .then(() => {
+        return knex.insert(rows).into(tableName);
+      })
+  );
 };
